@@ -41,24 +41,25 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**
 ```
-module exp6(S,R,c1k,Q,Qbar);
-input S,R,c1k;
-output reg Q;
-output reg Qbar;
-initial Q=0;
-initial Qbar=1;
-always @(posedge c1k)
-begin
-Q=S|((~R)&Q);
-Qbar=R|((~S)&(Qbar));
-end
-endmodule
+ module exp6(S,R,c1k,Q,Qbar);
+ input S,R,c1k;
+ output reg Q;
+ output reg Qbar;
+ initial Q=0;
+ initial Qbar=1;
+ always @(posedge c1k)
+ begin
+ Q=S|((~R)&Q);
+ Qbar=R|((~S)&(Qbar));
+ end
+ endmodule
 ```
 
 **RTL LOGIC FOR FLIPFLOPS**
-![Screenshot 2024-11-22 112109](https://github.com/user-attachments/assets/6a2a9fc7-5221-4f58-9fae-c774cde1adc8)
+![Screenshot 2024-12-03 105932](https://github.com/user-attachments/assets/2d0d5d0c-f0c0-4279-8152-12aa66d016db)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![Screenshot 2024-11-22 112438](https://github.com/user-attachments/assets/69fd14b9-35bb-4e20-9288-b68dec1fc1a6)
+![Screenshot 2024-12-03 110455](https://github.com/user-attachments/assets/18e997c8-e30e-4d54-9965-35e2001658f7)
+
 **RESULTS**
 SR flip flop implemented successfully and truth table verified.
