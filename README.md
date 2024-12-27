@@ -1,4 +1,4 @@
-![Screenshot 2024-11-22 112109](https://github.com/user-attachments/assets/5cde03a0-a676-4404-838a-374dc9aae80d)# SR-FLIPFLOP-USING-CASE
+# SR-FLIPFLOP-USING-CASE
 
 **AIM:**
 
